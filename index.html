@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ensembles de nombres</title>
+	<!-- Lien css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Lien icones -->
+	<script src="https://kit.fontawesome.com/13d6dfef31.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="https://zupimages.net/up/21/08/1547.png" />
+</head>
+<body>
+	<!-- Menu de navigation -->
+	<header>
+		<!-- Balise nav -->
+		<nav class="Menu">
+			<!-- Conteneur -->
+			<div class="inner">
+				<!-- Bloc Logo -->
+				<div class="m-left">
+					<a class="Logo" href="#">
+						<i class="fas fa-arrow-circle-up fa-4x"></i>
+					</a>
+				</div>
+				<!-- Bouton Menu -->
+				<input type="checkbox" id="bars" name="bars">
+				<!-- Apparence Hamburger -->
+				<label for="bars" id="ham"></label>
+				<!-- Boutons menu liens ancre -->
+				<div class="m-right">
+					<a class="Bouton" href="#AncreIntro">
+						<i class="fas fa-fast-backward"></i>Introduction
+					</a>
+					<a class="Bouton" href="#AncreN">
+						<i class="fas fa-plus"></i>Naturels
+					</a>
+					<a class="Bouton" href="#AncreZ">
+						<i class="fas fa-minus"></i>Relatifs
+					</a>
+					<a class="Bouton" href="#AncreD">
+						<i class="fas fa-percentage"></i>Décimaux
+					</a>
+					<a class="Bouton" href="#AncreQ">
+						<i class="fas fa-divide"></i>Rationnels
+					</a>
+					<a class="Bouton" href="#AncreR">
+						<i class="fas fa-square-root-alt"></i>Réels
+					</a>
+					<a class="Bouton" href="#AncrePlus">
+						<i class="fas fa-ellipsis-h"></i>Plus loin
+					</a>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+
+	<!-- Bandeau titre -->
+	<div class="Bandeau">
+		<h1 class="GrosTitre">
+			<a href="https://fr.wikipedia.org/wiki/Ensemble_de_nombres" target="_blank">ENSEMBLES DE NOMBRES</a>
+		</h1>
+	</div>
+
+
+	<!-- Contenu en boites -->
+	<div class="Content">
+
+		<!-- Accueil -->
+		<div class="Accueil">
+			<p>Bonjour à tous et bienvenue sur notre site !</p>
+			<p>Cette page web est dédiée à une notion mathématique abordée en classe de seconde : les ensembles de nombres.</p>
+			<p>Entièrement codée par nos soins à l'aide des langages de programmation HTML et CSS, cette page est là pour vous présenter dans les grandes lignes les ensembles de nombres, les concepts d'inclusion et d'appartenance à un ensemble, afin que vous puissiez vous lancer dans ce chapitre sans problème !</p>
+			<p>C'est parti !</p>
+		</div>
+
+		<!-- Introduction -->
+		<div id="AncreIntro" class="Intro">
+			<h2 class="SousTitre">Introduction</h2>
+			<p>
+				Un ensemble de nombres est, comme son nom l'indique, un groupe de nombres.
+			</p>
+			<p>
+				On note un ensemble de différentes manières.
+			</p>
+			<p>
+				Entre deux accolades "{" et "}" on met tous les nombres qui constituent l'ensemble.<br/>
+				On veut noter tous les entiers de 3 à 6 sous la forme d'un ensemble E :<br/>
+				E = { 3 ; 4 ; 5 ; 6 }
+			</p>
+			<p>
+				On peut aussi noter un ensemble sous forme d'intervalle. Pour cela, on note les bornes, c'est-à-dire les valeurs limites, minimale et maximale, entre crochets "[" et "]".<br/>
+				ATTENTION !<br/>
+				Les crochets permettent de noter des intervalles appartenant à l'ensemble des réels, que l'on verra par la suite.<br/>
+				Cela signifie que les nombres à virgules font partie de l'ensemble en question.<br/>
+				L'ensemble E des nombres réels de 3 à 6, extrémités incluses, se note :<br/>
+				E = [ 3 ; 6 ]
+			</p>
+			<p>
+				Pour noter qu'un nombre appartient à un ensemble, on utilise le symbole "ϵ".<br/>
+				Par exemple :<br/>
+				4 ϵ [ 3 ; 6 ]
+			</p>
+			<p>
+				Il est possible de noter l'union ou l'intersection de deux ensembles.<br/>
+				Pour cela, on utilise le symbole "∪" pour l'union et le symbole "∩" pour l'intersection.<br/>
+				Par exemple :<br/>
+				4 ϵ [ 0 ; 5 ] ∩ [ 3 ; 6 ]<br/>
+				5 ϵ [ 0 ; 5 ] ∪ [ 3 ; 6 ]
+			</p>
+			<p>
+				Il également est possible que plusieurs ensembles soient inclus les uns dans les autres.<br/>
+				Pour noter cela, on utilise le symbole "⊂" pour une inclusion au sens strict, excluant l'égalité entre les ensembles, ou le symbole "⊆" pour une inclusion au sens large, égalité non exclue.<br/>
+				Par exemple :<br/>
+				[ 3 ; 6 ] ⊂ [ 4 ; 7 ]<br/>
+				[ 3 ; 6 ] ⊆ [ 4 ; 7 ]<br/>
+				[ 3 ; 6 ] ⊆ [ 3 ; 6 ]
+			</p>
+			<p>
+				Enfin, comme vous avez pu le voir ci-dessus, on peut nommer un ensemble par une lettre. En l'occurrence, on a utilisé la lettre E comme "Ensemble", mais n'importe quelle lettre peut convenir.
+			</p>
+			<p>
+				On arrive ainsi aux ensembles usuels : N, Z, D, Q et R.<br/>
+				Ils sont respectivement l'ensemble des nombres Naturels, Relatifs, Décimaux, Rationnels et Réels.
+			</p>
+			<p>
+				Sachez que ces ensembles sont inclus les uns dans les autres :<br/>
+				N ⊂ Z ⊂ D ⊂ Q ⊂ R
+			</p>
+			<div class="inclusion">
+				<div class="leftbox">
+					<img class="schema" src="https://zupimages.net/up/21/08/ywij.png" alt="schema"/>
+				</div>
+				<div class="rightbox">
+					<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/kL-eMNZiARM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!-- Entiers naturels -->
+		<div id="AncreN" class="Naturels">
+			<h2 class="SousTitre">Les entiers naturels</h2>
+			<p>
+				Un entier naturel est un nombre positif pouvant s'écrire avec une suite finie de chiffres en notation décimale positionnelle (sans signe et sans virgule). Chaque nombre entier a un successeur unique, c'est-à-dire un entier qui lui est immédiatement supérieur, et la liste des entiers naturels est infinie.
+			</p>
+			<p>
+				La liste des entiers n'a pas de fin, car s'il existait un nombre fini d'entiers, on pourrait toujours ajouter 1 au plus grand et alors on obtiendrait un entier qui n'était pas dans la liste. C'est pourquoi la quantité des nombres entiers est infinie.
+			</p>
+			<p>
+				Tous les nombres calculés par une addition ou une multiplication à partir de deux nombres naturels sont des nombres naturels aussi.
+			</p>
+			<p>
+				Les nombres entiers naturels peuvent être pair ou impair. Ils peuvent avoir des propriétés particulières, par exemple les nombres premiers.
+			</p>
+			<p>
+				Un nombre entier est positif ou nul, il s'écrit sans chiffre après la virgule et est supérieur ou égal à 0.
+			</p>
+		</div>
+
+		<!-- Entiers relatifs -->
+		<div id="AncreZ" class="Relatifs">
+			<h2 class="SousTitre">Les entiers relatifs</h2>
+			<p>
+				L'ensemble des relatifs se note Z.
+			</p>
+			<p>
+				Tous les nombres naturels sont des entiers positifs. Mais il existe par conséquent des nombres entiers négatifs, inférieurs à 0.<br/>
+				On les note avec un signe "-" et une valeur numérique. En réalité, les positifs aussi ont un signe, en l'occurrence "+", mais ce dernier est sous-entendu.<br/>
+				ATTENTION !<br/>
+				Les relatifs englobent uniquement les entiers qu'ils soient positifs ou négatifs, pas les nombres à virgule !
+			</p>
+			<p>
+				L'ensemble Z des relatifs peut se représenter à l'aide d'une droite graduée : en effet, une droite est infinie, et cet ensemble l'est également, et des deux côtés de 0.
+			</p>
+			<p>
+				Remarque :<br/>
+				0 est la barrière entre nombres positifs et nombres négatifs, il appartient aux deux familles de nombres mais il est d'usage de dire qu'il est positif car il n'est quasiment jamais accompagné de signe.
+			</p>
+			<p>
+				Pour clarifier :<br/>
+				Les chiffres qui constituent un nombre indiquent sa distance par rapport à 0 et le signe qui le précède indique de quel côté du 0 il est (s'il n'a pas de signe, il est à droite du 0).
+			</p>
+		</div>
+
+		<!-- Nombres décimaux -->
+		<div id="AncreD" class="Decimaux">
+			<h2 class="SousTitre">Les nombres décimaux</h2>
+			<p>
+				L’ensemble D des décimaux peut s’écrire exactement avec un nombre fini de chiffres après la virgule. Il s’écrit aussi obligatoirement sous la forme a/10^n  avec a ∈ Z et n ∈ N.<br/>
+				Exemple :<br/>
+				1/2 ϵ D
+			</p>
+			<p>
+				On peut aussi utiliser le raisonnement par l’absurde pour démontrer qu’un nombre n’est pas décimal. Exemple avec 1/3 :
+			</p>
+			<p>
+				Supposons que 1/3 est un nombre décimal.<br/>
+				Il existe alors 2 nombres entiers naturels a et n tels que 1/3 = 𝑎/10𝑛<br/>
+				D’ où 10𝑛/3 = a. a étant un entier naturel, on en déduit que 10𝑛 est divisible par 3.<br/>
+				Or, « Un nombre est divisible par 3 si la somme de ses chiffres est divisible par 3 ».<br/>
+				Or la somme des chiffres de 10𝑛 est 1, donc 10𝑛 n’est pas divisible par 3.<br/>
+				On arrive donc à une contradiction. On en déduit alors que 1/3 n’est pas un nombre décimal.
+			</p>
+		</div>
+
+		<!-- Nombres rationnels -->
+		<div id="AncreQ" class="Rationnels">
+			<h2 class="SousTitre">Les nombres rationnels</h2>
+			<p>
+				L’ensemble Q des rationnels englobe un nombre qui peut s'exprimer comme le quotient irréductible de deux entiers relatifs.<br/>
+				Exemple :<br/>
+				1/3 ϵ Q
+			</p>
+			<p>
+				Afin de démontrer l’irrationalité d’un nombre tel que √2, on utilise la démonstration par l’absurde.<br/>
+				Si √2 est rationnel, alors √2 = p/q tel que p et q ∈ N et PGCD(p,q) = 1.<br/>
+				On obtient donc l’équation suivante :<br/>
+				√2 = p/q<br/>
+				2  = p2/q2<br/>
+				2p2 = q2<br/>
+				Donc p est pair, il peut donc s’écrire 2K<br/>
+				4K2 = 2q2<br/>
+				Donc q est également pair.<br/>
+				Ce qui contredit l’affirmation PGCD(p,q) = 1<br/>
+				On en déduit que √2 n’est pas rationnel
+			</p>
+		</div>
+
+		<!-- Nombres réels -->
+		<div id="AncreR" class="Reels">
+			<h2 class="SousTitre">Les nombres réels</h2>
+			<p>
+				L’ensemble R des réels englobe tous les autres ensembles. Un nombre réel peut s’écrire avec une partie entière et une partie décimale finie ou infinie.<br/>
+				Exemple :<br/>
+				π ϵ R
+			</p>
+			<p>
+				L'ensemble des réels contient donc tous les nombres, des infiniments petits aux infiniment grands, tant dans les négatifs que dans les positifs.<br/>
+				Ainsi, on peut noter sous forme d'intervalle :<br/>
+				R = ] - ∞ ; + ∞ [
+			</p>
+			<p>
+				L'ensemble R peut se représenter sur une droite.
+			</p>
+		</div>
+
+		<!-- Pour viser plus haut... -->
+		<div id="AncrePlus" class="Plus">
+			<h2 class="SousTitre">Pour viser plus haut...</h2>
+			<p>
+				Voilà, avec ça vous devriez pouvoir suivre ce chapitre et avancer plus vite en classe. Mais, cela ne suffira pas pour un contrôle ! Êcoutez attentivement votre professeur et posez-lui des questions ! Le travail en classe vaut mieux que n'importe quel complément...
+			</p>
+			<p>
+				Enfin bref, vous vous doutez bien que cette notion d'ensembles de nombres cache bien d'autres concepts tout aussi importants et intéressants, bien que très abstraits...
+			</p>
+			<p>
+				Par exemple, on a parlé plusieurs fois de l'infini. Mais... Qu'est-ce que c'est au fait, l'infini ?<br/>
+				En fait, on voit bien ce que c'est, mais ses subtilités sont moins évidentes.
+			</p>
+			<p>
+				Tenez : prenez l'ensemble des naturels N.<br/>
+				Chaque nombre qui le constitue est appelé un élément. Ainsi 1 est un élément, 36 également...<br/>
+				Vous conviendrez que le nombre d'éléments de N est infini.<br/>
+				Mais qu'en est-il de l'ensemble des relatifs Z ?<br/>
+				Tout, juste ! Il est constitué d'une infinité d'éléments !<br/>
+				Mais lequel de ces deux infinis est le plus grand ?<br/>
+				Intuitivement, Z semble contenir plus d'éléments que N, qui est d'ailleurs inclus dans Z !<br/>
+				En réalité, les éléments étant dénombrables, il s'agit du même infini. Oui oui ! N et Z "contiennent la même quantité d'éléments".
+			</p>
+			<p>
+				Mais, entre 1 et 2, combien y a-t-il de réels ?<br/>
+				Une infinité aussi ! Car entre 1,2 et 1,3 on trouve 1,25 et 1,26 par exemple.<br/>
+				Et entre 1,25 et 1,26 ? La même chose, une infinité !<br/>
+				Cette fois, les éléments ne sont pas dénombrables, chaque point constituant la droite des réels est un nombre.<br/>
+				Ainsi on a un infini différent du précédent, que l'on voit intuitivement plus grand...
+			</p>
+			<p>
+				Voyons maintenant tout autre chose.
+			</p>
+			<p>
+				Si vous pensez déjà en connaitre beaucoup au sujet des nombres, vous êtes loin du compte. L'ensemble le plus grand que vous connaissez à présent est l'ensemble des réels R.<br/>
+				Celui-ci se représente sur une droite, donc en une dimension.<br/>
+				Eh bien nos amis les mathématiciens ont inventé d'autres nombres qui se représentent sur un plan. Ils forment l'ensemble des complexes.<br/>
+				Oui, les nombres complexes. difficile de les imaginer, pas vrai ? Ils portent bien leur nom.
+			</p>
+			<p>
+				Cet ensemble répond à la règle : i² = -1<br/>
+				(Pardon ?)<br/>
+				Mais une des règles de base en maths, c'est pas que tout carré est positif ?
+			</p>
+			<p>
+				Bref, vous ne serez jamais au bout de vos surprises, en mathématiques !
+			</p>
+		</div>
+	</div>
+
+
+	<!-- Pied de page -->
+	<div class="footer">
+		<p class="pied">
+			&copy; 2021-Bogdan DUFFAUD-Ilias DAOUD-Enzo HU-Mathieu TRAN-Antoine PICHON
+		</p>
+	</div>
+
+</body>
+
+</html>

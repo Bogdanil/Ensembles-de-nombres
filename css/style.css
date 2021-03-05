@@ -1,0 +1,318 @@
+/*Importations polices*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@100;400;700;900&display=swap');
+
+
+/*Règles générales*/
+body{
+	margin-top: 70px;
+	margin-bottom: 38px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #1C1C1C;
+	overflow-x: hidden;
+	text-align: justify;
+}
+p{
+	color : white;
+	font-size: 120%;
+	font-family: 'Lato', sans-serif;
+	margin: 20px; padding: 0px;
+}
+.Content>p{
+	line-height: 1.5;
+}
+
+/*Menu de navigation*/
+.Menu{
+	z-index: 1;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	background-color: rgba(255,255,255,0.95);
+	font-family: 'Lato';
+}
+.m-left{
+	float: left;
+}
+.Logo{
+	color: #079992;
+	transition: 0.3s all ease-in-out;
+}
+.Logo:hover{
+	color: #369BF7;
+}
+.Logo i{
+	padding-top: 3px;
+	padding-left: 10px;
+}
+.m-right{
+	float: right;
+}
+.inner{
+	width: 80%;
+	margin: auto;
+}
+.Bouton i{
+	margin-right: 5px;
+}
+.Bouton{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding-bottom: 0;
+	margin: 0 10px;
+	border-bottom: 4px solid transparent;
+	transition: all 0.3s ease-in-out;
+	display: inline-block;
+	height: 66px;
+}
+.Bouton:hover{
+	color: #079992;
+	border-color: #079992;
+}
+
+/*Logo hamburger*/
+#ham{
+	position: relative;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+	display: none;
+	float: right;
+	background: url("https://zupimages.net/up/21/08/1547.png") center no-repeat;
+	background-size: 70%;
+	transition: all 0.3s ease-in-out;
+}
+#bars{
+	display: none;
+}
+
+
+input{
+	width: 40px;
+	height: 70px;
+	display: none;
+	align-items: center;
+	float: right;
+}
+
+
+
+
+
+
+
+
+/*Bandeau présentation*/
+.Bandeau{
+	width: 100%;
+	height: 300px;
+	line-height: 300px;
+	background: url("https://zupimages.net/up/21/07/51h9.jpg") center no-repeat;
+	background-size: cover;
+}
+.GrosTitre{
+	text-align: center;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
+}
+.GrosTitre a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+
+/*Règles des sous-titres*/
+
+.SousTitre{
+	margin-left: 25%;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+
+/*Règles du contenu*/
+.Content{
+	background-color: black;
+	width: 80%;
+	margin: 30px auto;
+	box-sizing: border-box;
+	padding: 100px;
+}
+
+
+/*Accueil*/
+.Accueil{
+	text-align: center;
+	font-weight: bold;
+}
+.Accueil p{
+	color: #B5B5B5;
+}
+
+
+/*Intro*/
+.Intro{
+	padding-top: 70px;
+	margin-top: 0;
+}
+
+.inclusion{
+	display: inline-block;
+}
+.leftbox{
+	width: 50%;
+	height: 321.67px;
+	float: left;
+	line-height: 321.67px;
+	white-space: nowrap;
+}
+.schema{
+	width: 100%;
+	vertical-align: middle;
+}
+.rightbox{
+	width: 50%;
+	float: right;
+}
+.video{
+	width: 100%;
+}
+
+/*Naturels*/
+.Naturels{
+	padding-top: 70px;
+	margin-top: 0;
+}
+
+/*Relatifs*/
+.Relatifs{
+	padding-top: 70px;
+	margin-top: 0;
+}
+
+/*Décimaux*/
+.Decimaux{
+	padding-top: 70px;
+	margin-top: 0;
+}
+
+/*Rationnels*/
+.Rationnels{
+	padding-top: 70px;
+	margin-top: 0;
+}
+
+/*Réels*/
+.Reels{
+	padding-top: 70px;
+	margin-top: 0;
+}
+
+/*Plus loin...*/
+.Plus{
+	padding-top: 70px;
+	margin-top: 0;
+}
+
+
+/*Pied de page*/
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 38px;
+	text-align: center;
+	background-color: #1C1C1C;
+}
+.pied{
+	position: relative;
+	bottom: 7.5px;
+	font-size: 69%;
+}
+
+
+/*Resize*/
+@media only screen and (max-width: 1080px){
+	.Content{
+		width: 95%;
+		margin: 14px auto;
+		padding: 8%;
+	}
+	.inner{
+		width: 95%;
+	}
+	input{
+		display: flex;
+	}
+	.m-right{
+		display: block;
+		position: absolute;
+		top: 70px;right:0;
+		width: 312px;
+		height: 100vh;
+		background: rgba(255,255,255,0.90);
+		transition: all 0.3s ease-in-out;
+		transform: translateX(100%);
+	}
+	#ham{
+		display: flex;
+	}
+	#bars:checked~div.m-right{
+		transform: translateX(0);
+	}
+	#bars:checked~#ham{
+		background: url("https://zupimages.net/up/21/08/2aef.png") center no-repeat;
+		background-size: 40%;
+		transition: all 0.3s ease-in-out;
+	}
+	.Bouton{
+		display: block;
+		text-align: center;
+		padding: 0;margin: 0;
+	}
+	.inclusion{
+		display: block;
+	}
+	.leftbox{
+		width: 100%;
+		height: auto;
+	}
+	.schema{
+		width: 100%;
+		height: calc(682px*100%/1200px);
+	}
+	.rightbox{
+		width: 100%;
+		height: auto;
+	}
+	.video{
+		width: 100%;
+		height: calc(682px*100%/1200px);
+	}
+	.Naturels{
+		padding-top: 70px;
+		margin-top: 800px;
+	}
+}
+@media only screen and (max-width: 940px){
+	.Naturels{
+		margin-top: 730px;
+	}
+}
+@media only screen and (max-width: 825px){
+	.Naturels{
+		margin-top: 700px;
+	}
+}
+@media only screen and (max-width: 700px){
+	.Naturels{
+		margin-top: 600px;
+	}
+}
